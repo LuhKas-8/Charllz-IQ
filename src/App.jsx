@@ -1,5 +1,6 @@
-import { useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
+import Auth from './Auth.jsx';
+import './index.css';
 const features = [
   { icon: '▤', title: 'CBT Practice', text: 'Prepare with timed quizzes, exam-style questions and instant results.', tag: 'EXAM READY' },
   { icon: '▧', title: 'Learning Library', text: 'Explore clear notes, topic summaries and useful study resources.', tag: 'STUDY SMART' },
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="site-shell">
+      <Auth/>
       <header className="topbar">
         <a className="brand" href="#" aria-label="Charllz IQ home">
           <span className="brand-mark">C<span>✦</span></span>
